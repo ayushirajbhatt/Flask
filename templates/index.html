@@ -3,18 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Flask app</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-  <script src="{{url_for('static', filename='script.js')}}"></script>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <main class="main_full">
 	<div class="container">
 		<div class="panel">
 			<div class="button_outer">
 				<div class="btn_upload">
-					<input type="file" id="upload_file" name="">
+					<input type="file" id="upload_file" name="" />
 					Upload Image
 				</div>
 				<div class="processing_bar"></div>
@@ -27,8 +25,6 @@
 		</div>
 	</div>
 </main>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+<script src="{{url_for('static', filename='script.js')}}"></script>
 </body>
 </html>
